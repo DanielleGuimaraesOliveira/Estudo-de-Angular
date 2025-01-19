@@ -1,5 +1,14 @@
 import { Component } from '@angular/core';
 
+
+interface IPlano { // declaro qual vai ser a tipagem do objeto --- evita que o valor seja undefined
+  tipo: string,
+  preco: number,
+
+}
+
+
+
 @Component({ //decorator
   selector: 'app-card', //como o componente vai referenciado em outros componentes
   standalone: false,
@@ -10,9 +19,9 @@ import { Component } from '@angular/core';
 export class CardComponent {
 // aqui dentro conseguimos colocar metodos, logicas e propriedades que serão usadas para esse componente
 
-  plano = {
+  plano: IPlano ={ // define que o tipo de plano pode ser qualquer um, então se não tiver uma propriedade desse objeto definida ela pode ainda existir. Mas não é a melhor opção
     tipo: 'Simples',
-    preco: '100',
-    
+    preco: 100,
+
   }
 }
