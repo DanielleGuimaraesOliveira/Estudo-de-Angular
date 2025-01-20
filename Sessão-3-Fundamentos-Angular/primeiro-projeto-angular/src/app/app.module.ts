@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CardsModule } from './cards/cards.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { CardsModule } from './cards/cards.module';
     AppRoutingModule,
     CardsModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent] // o appModule é o primeiro modulo carregado e ele fará o bootstrap do appComponent que é nosso primeiro componente. E o appModule que será inicializado primeiro pode chamar outros Modulos
 })
 export class AppModule { }

@@ -14,7 +14,8 @@ interface IPlano { // declaro qual vai ser a tipagem do objeto --- evita que o v
   standalone: false,
 
   templateUrl: './card.component.html', // é o template que o componente vai usar quando for referenciado
-  styleUrl: './card.component.scss' // é o estilo que o componente vai usar quando for utilizado -- é um array
+  styleUrl: './card.component.scss', // é o estilo que o componente vai usar quando for utilizado -- é um array
+  
 })
 export class CardComponent {
 // aqui dentro conseguimos colocar metodos, logicas e propriedades que serão usadas para esse componente

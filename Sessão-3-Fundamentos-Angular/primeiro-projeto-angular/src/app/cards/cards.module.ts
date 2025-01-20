@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 import { CardButtonComponent } from '../card-button/card-button.component';
+import {MatSliderModule} from '@angular/material/slider';
 
 
 
@@ -11,7 +12,8 @@ import { CardButtonComponent } from '../card-button/card-button.component';
     CardButtonComponent], // declaro que esses componentes pertencem a esse modulo
 
   imports: [
-    CommonModule
+    CommonModule,
+    MatSliderModule
   ],
   exports: [
     CardComponent,// declaro quais componentes que pertencem a esse modulo podem ser usados por outros modulos
