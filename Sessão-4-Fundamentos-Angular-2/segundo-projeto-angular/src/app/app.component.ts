@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'segundo-projeto-angular';
+  inputText = 'Texto INICIAL';
+  isDisable = false;
+
+  changeDisable(){
+    if(this.isDisable==false){
+      this.isDisable = true;
+    }else{
+      this.isDisable =false
+    }
+  }
 }
