@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'segundo-projeto-angular';
   inputText = 'Texto INICIAL';
   isDisable = false;
+  btnTitle = 'esse é o title';
 
   changeDisable(){
     if(this.isDisable==false){
