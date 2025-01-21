@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'segundo-projeto-angular';
+
   inputText = 'Texto INICIAL';
   isDisable = false;
   btnTitle = 'esse é o title';
+  cardPlanType = 'Completo';
+  cardPlanPrice = 250;
+  cardPlanType2 = 'Simples';
+  cardPlanPrice2 = 100;
 
   styleObj = {
     color: 'aquamarine',
@@ -25,7 +30,6 @@ export class AppComponent {
       width: '400px',
 
     };
-    console.log("atualizou")
  };
 
   changeDisable(){
@@ -35,4 +39,6 @@ export class AppComponent {
       this.isDisable =false
     }
   }
+
+
 }
