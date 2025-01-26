@@ -40,5 +40,9 @@ export class AppComponent {
     }
   }
 
+  changeText(textoAtual: string){
+    this.cardPlanType = textoAtual;
+  }
+
 
 }
