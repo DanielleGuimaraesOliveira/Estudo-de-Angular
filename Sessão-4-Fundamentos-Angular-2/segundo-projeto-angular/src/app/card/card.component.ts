@@ -26,7 +26,7 @@ export class CardComponent {
   }
 
 
-  @Input({required: true}) planPrice : number = 0 ; // O required diz que essa propriedade terá que receber um valor do pai, então caso não tenha terá um erro de compilação.
+  @Input({required: true, transform: (value: number) => value = 3000}) planPrice : number = 0 ; // O required diz que essa propriedade terá que receber um valor do pai, então caso não tenha terá um erro de compilação.
 
    clicksCounter(valorEmmitted: number){
     this.valueEmitted = valorEmmitted;
