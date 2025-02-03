@@ -1,0 +1,23 @@
+.card-btn{
+  width: 200px;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &--white{
+    background-color: white;
+
+  }
+
+  &--purple{
+    background-color: rgb(181, 126, 202);
+  }
+
+
+
+}

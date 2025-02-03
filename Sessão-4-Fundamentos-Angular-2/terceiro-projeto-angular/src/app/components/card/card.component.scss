@@ -1,0 +1,25 @@
+.card{
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  border-radius: 25px;
+
+    &--orange{
+      background-color: rgb(236, 165, 52);
+    }
+
+    &--purple{
+      background-color: rgb(221, 175, 239);
+    }
+
+    .preco{
+      font-weight: 600;
+    }
+
+    .text{
+      font-size: 2rem;
+    }
+}

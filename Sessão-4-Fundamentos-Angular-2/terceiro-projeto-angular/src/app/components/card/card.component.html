@@ -1,0 +1,7 @@
+<div class="card" [ngClass]="{
+  'card--orange' : colorPlan === 'orange' ? true : false,
+  'card--purple' : colorPlan === 'purple' ? true : false, }" >
+  <p class="text plano">Plano {{typePlan}}</p>
+  <p class="text preco">R${{pricePlan}},00</p>
+  <app-btn-card [BtnStyle]=" colorPlan === 'orange' ? 'white' : 'purple'"></app-btn-card>
+</div>
